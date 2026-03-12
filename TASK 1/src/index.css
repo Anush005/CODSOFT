@@ -1,0 +1,63 @@
+@import url('@fontsource/dm-sans/400.css');
+@import url('@fontsource/dm-sans/500.css');
+@import url('@fontsource/dm-sans/600.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 25% 97%;
+    --foreground: 220 40% 10%;
+    --surface: 0 0% 100%;
+    --bot-bg: 210 50% 94%;
+    --bot-fg: 215 80% 20%;
+    --user-bg: 200 14% 96%;
+    --user-fg: 220 40% 10%;
+    --primary: 210 70% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 70% 38%;
+    --secondary: 210 50% 94%;
+    --secondary-foreground: 215 80% 20%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 50%;
+    --accent: 210 50% 94%;
+    --accent-foreground: 215 80% 20%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 70% 45%;
+    --radius: 0.75rem;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --chart-1: 210 70% 45%;
+    --chart-2: 200 50% 50%;
+    --chart-3: 190 40% 40%;
+    --chart-4: 220 50% 35%;
+    --chart-5: 205 45% 45%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 210 70% 45%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 50% 94%;
+    --sidebar-accent-foreground: 215 80% 20%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 210 70% 45%;
+
+    --chat-shadow: 0 0 0 1px rgba(0,0,0,.04), 0 4px 12px -2px rgba(0,0,0,.03), 0 12px 24px -4px rgba(0,0,0,.02);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'DM Sans', sans-serif;
+  }
+}
